@@ -1,0 +1,38 @@
+:root {
+    --color-text-primary: #353732;
+    --color-text-secondary: #45525b;
+
+    --color-input-fill: rgba(82, 80, 59, 0.02);
+    --color-input-stroke: #e5e7eb;
+
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #fafafa;
+    --color-background-tertiary: #f8f8f8;
+
+    --font-family-primary: 'Georgia', sans-serif;
+    --font-family-secondary: 'Palatino-Linotype', sans-serif;
+    --font-family-tertiary: 'Poppins', sans-serif;
+
+    --border: 1px solid var(--color-input-stroke);
+    --border-radius: 8px;
+
+    --container-header-width: 1167px;
+    --container-body-width: 768px;
+    --container-padding-x: 15px;
+    --container-padding-y: 100px;
+
+    --header-height: 80px;
+
+    --input-height: 38px;
+
+    --transition-duration: 0.2s;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: var(--color-text-primary);
+    background-color: var(--color-background-primary);
+}
