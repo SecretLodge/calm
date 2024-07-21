@@ -105,5 +105,5 @@ input[type='number'] {
 
 a {
     text-decoration: none;
-    color: var(--color-text-primary);
+    color: inherit;
 }
