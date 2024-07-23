@@ -195,7 +195,7 @@ body {
     font-family: var(--font-family-primary);
     line-height: 22px;
     color: var(--color-text-secondary);
-    margin-bottom: 7px;
+    margin-bottom: auto;
 }
 
 .article__column .article__description {
@@ -271,6 +271,49 @@ body {
     border: none;
     border-radius: var(--border-radius);
     background-color: var(--color-text-primary);
+}
+
+.article__row {
+    column-gap: 20px;
+}
+
+.article__row:not(:has(img)) .article__description {
+    margin-bottom: 10px;
+}
+
+.article__row .article__image {
+    max-width: 200px;
+    border-radius: var(--border-radius);
+}
+
+.articles__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.articles-all .articles__list {
+    margin-bottom: 60px;
+}
+
+.articles__more {
+    text-align: center;
+}
+
+.articles__more-link {
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+}
+
+.articles__more-link::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 85px;
+    width: 33px;
+    height: 22px;
+    background: url('../images/icons/right-arrow.svg') center / 100% no-repeat;
 }
 
 @media (max-width: 810px) {
@@ -374,6 +417,49 @@ body {
     .form__button {
         max-width: 100%;
         height: 48px;
+    }
+
+    .article__row:has(img) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article__row .article__image {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .article__row .article__image:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .article__row .article__title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .article__row:has(img) .article__title:not(:last-child) {
+        margin-bottom: 11px;
+    }
+
+    .article__row .article__description {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .article__row .article__date {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .articles__more-link {
+        font-size: 18px;
+    }
+
+    .articles__more-link::after {
+        left: 110px;
+        top: 0;
     }
 }
 
