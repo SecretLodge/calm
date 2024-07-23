@@ -329,9 +329,6 @@ body {
     color: var(--color-text-secondary);
 }
 
-.footer__body {
-}
-
 .footer__menu-list {
     display: flex;
     gap: 10px;
@@ -339,9 +336,6 @@ body {
 
 .footer__menu-list:not(:last-child) {
     margin-bottom: 20px;
-}
-
-.footer__menu-item {
 }
 
 .footer__menu-link {
